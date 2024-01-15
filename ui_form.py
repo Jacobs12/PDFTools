@@ -1,0 +1,146 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'form.ui'
+##
+## Created by: Qt User Interface Compiler version 6.5.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QLabel, QLineEdit, QListWidget,
+    QListWidgetItem, QMainWindow, QMenuBar, QPushButton,
+    QSizePolicy, QStackedWidget, QStatusBar, QWidget)
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.tab_button_word = QPushButton(self.centralwidget)
+        self.tab_button_word.setObjectName(u"tab_button_word")
+        self.tab_button_word.setGeometry(QRect(20, 20, 100, 32))
+        self.tab_button_excel = QPushButton(self.centralwidget)
+        self.tab_button_excel.setObjectName(u"tab_button_excel")
+        self.tab_button_excel.setGeometry(QRect(20, 60, 100, 32))
+        self.tab_button_ppt = QPushButton(self.centralwidget)
+        self.tab_button_ppt.setObjectName(u"tab_button_ppt")
+        self.tab_button_ppt.setGeometry(QRect(20, 100, 100, 32))
+        self.tab_button_split = QPushButton(self.centralwidget)
+        self.tab_button_split.setObjectName(u"tab_button_split")
+        self.tab_button_split.setGeometry(QRect(20, 140, 100, 32))
+        self.tab_button_merge = QPushButton(self.centralwidget)
+        self.tab_button_merge.setObjectName(u"tab_button_merge")
+        self.tab_button_merge.setGeometry(QRect(20, 180, 100, 32))
+        self.stackedWidget = QStackedWidget(self.centralwidget)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setGeometry(QRect(150, 10, 621, 511))
+        self.word = QWidget()
+        self.word.setObjectName(u"word")
+        self.label = QLabel(self.word)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(40, 20, 141, 16))
+        self.stackedWidget.addWidget(self.word)
+        self.excel = QWidget()
+        self.excel.setObjectName(u"excel")
+        self.label_2 = QLabel(self.excel)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(40, 40, 141, 16))
+        self.stackedWidget.addWidget(self.excel)
+        self.ppt = QWidget()
+        self.ppt.setObjectName(u"ppt")
+        self.label_3 = QLabel(self.ppt)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(30, 30, 141, 16))
+        self.stackedWidget.addWidget(self.ppt)
+        self.split = QWidget()
+        self.split.setObjectName(u"split")
+        self.label_4 = QLabel(self.split)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(20, 20, 58, 16))
+        self.stackedWidget.addWidget(self.split)
+        self.merge = QWidget()
+        self.merge.setObjectName(u"merge")
+        self.merge_listwidget = QListWidget(self.merge)
+        self.merge_listwidget.setObjectName(u"merge_listwidget")
+        self.merge_listwidget.setGeometry(QRect(30, 40, 431, 291))
+        self.merge_up_button = QPushButton(self.merge)
+        self.merge_up_button.setObjectName(u"merge_up_button")
+        self.merge_up_button.setGeometry(QRect(470, 210, 100, 32))
+        self.merge_down_button = QPushButton(self.merge)
+        self.merge_down_button.setObjectName(u"merge_down_button")
+        self.merge_down_button.setGeometry(QRect(470, 240, 100, 32))
+        self.merge_delete_button = QPushButton(self.merge)
+        self.merge_delete_button.setObjectName(u"merge_delete_button")
+        self.merge_delete_button.setGeometry(QRect(470, 270, 100, 32))
+        self.merge_add_button = QPushButton(self.merge)
+        self.merge_add_button.setObjectName(u"merge_add_button")
+        self.merge_add_button.setGeometry(QRect(470, 300, 100, 32))
+        self.label_5 = QLabel(self.merge)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(40, 10, 58, 16))
+        self.label_6 = QLabel(self.merge)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(30, 370, 71, 20))
+        self.merge_output_field = QLineEdit(self.merge)
+        self.merge_output_field.setObjectName(u"merge_output_field")
+        self.merge_output_field.setGeometry(QRect(100, 370, 191, 21))
+        self.label_7 = QLabel(self.merge)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setGeometry(QRect(300, 373, 58, 16))
+        self.label_8 = QLabel(self.merge)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(30, 420, 71, 20))
+        self.merge_folder_button = QPushButton(self.merge)
+        self.merge_folder_button.setObjectName(u"merge_folder_button")
+        self.merge_folder_button.setGeometry(QRect(110, 415, 100, 32))
+        self.merge_start_button = QPushButton(self.merge)
+        self.merge_start_button.setObjectName(u"merge_start_button")
+        self.merge_start_button.setGeometry(QRect(470, 415, 100, 32))
+        self.stackedWidget.addWidget(self.merge)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QMenuBar(MainWindow)
+        self.menubar.setObjectName(u"menubar")
+        self.menubar.setGeometry(QRect(0, 0, 800, 24))
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.tab_button_word.setText(QCoreApplication.translate("MainWindow", u"\u8f6c\u4e3aWord", None))
+        self.tab_button_excel.setText(QCoreApplication.translate("MainWindow", u"\u8f6c\u4e3aExcel", None))
+        self.tab_button_ppt.setText(QCoreApplication.translate("MainWindow", u"\u8f6c\u4e3aPPT", None))
+        self.tab_button_split.setText(QCoreApplication.translate("MainWindow", u"PDF\u62c6\u5206", None))
+        self.tab_button_merge.setText(QCoreApplication.translate("MainWindow", u"PDF\u5408\u5e76", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"\u8f6c\u4e3aword", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u8f6c\u4e3aexcel", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u8f6c\u4e3appt", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"PDF\u62c6\u5206", None))
+        self.merge_up_button.setText(QCoreApplication.translate("MainWindow", u"\u4e0a\u79fb", None))
+        self.merge_down_button.setText(QCoreApplication.translate("MainWindow", u"\u4e0b\u79fb", None))
+        self.merge_delete_button.setText(QCoreApplication.translate("MainWindow", u"\u5220\u9664", None))
+        self.merge_add_button.setText(QCoreApplication.translate("MainWindow", u"\u6dfb\u52a0", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"PDF\u5408\u5e76", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"\u8f93\u51fa\u540d\u79f0\uff1a", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u".pdf", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"\u8f93\u51fa\u76ee\u5f55\uff1a", None))
+        self.merge_folder_button.setText(QCoreApplication.translate("MainWindow", u"PDF\u76f8\u540c\u76ee\u5f55", None))
+        self.merge_start_button.setText(QCoreApplication.translate("MainWindow", u"\u5f00\u59cb\u8f6c\u6362", None))
+    # retranslateUi
+
