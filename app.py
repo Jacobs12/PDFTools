@@ -13,6 +13,7 @@ from mainwindow import *
 from PySide6.QtGui import QIcon
 
 # pyinstaller --noconsole --icon=Assets/Icon/icon.png app.py
+# # pyinstaller --noconsole --icon=Assets/Icon/icon.ico app.py
 def application_start():
     """
 
