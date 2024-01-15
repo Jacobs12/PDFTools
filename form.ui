@@ -299,6 +299,19 @@
        <string>开始转换</string>
       </property>
      </widget>
+     <widget class="QLabel" name="merge_output_label">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>450</y>
+        <width>341</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>请选择目录</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
