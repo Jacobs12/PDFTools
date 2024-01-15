@@ -10,14 +10,16 @@ import sys
 import mainwindow
 
 from mainwindow import *
+from PySide6.QtGui import QIcon
 
-
+# pyinstaller --noconsole --icon=Assets/Icon/icon.png app.py
 def application_start():
     """
 
     :param self:
     """
     app = QApplication(sys.argv)
+    app.setWindowIcon(QIcon('Assets/Icon/icon.png'))  # 设置窗口的头标
     widget = MainWindow()
     widget.show()
     sys.exit(app.exec())

@@ -110,6 +110,9 @@ class Ui_MainWindow(object):
         self.merge_output_label.setObjectName(u"merge_output_label")
         self.merge_output_label.setGeometry(QRect(120, 450, 341, 16))
         self.stackedWidget.addWidget(self.merge)
+        self.label_9 = QLabel(self.centralwidget)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setGeometry(QRect(630, 530, 161, 16))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -146,5 +149,6 @@ class Ui_MainWindow(object):
         self.merge_folder_button.setText(QCoreApplication.translate("MainWindow", u"PDF\u76f8\u540c\u76ee\u5f55", None))
         self.merge_start_button.setText(QCoreApplication.translate("MainWindow", u"\u5f00\u59cb\u8f6c\u6362", None))
         self.merge_output_label.setText(QCoreApplication.translate("MainWindow", u"\u8bf7\u9009\u62e9\u76ee\u5f55", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"\u672c\u8f6f\u4ef6\u83b7\u5f97\u52c7\u54e5\u5927\u529b\u652f\u6301", None))
     # retranslateUi
 
